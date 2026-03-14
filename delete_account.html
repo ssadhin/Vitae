@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account | Vitae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --accent: #ef4444;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: radial-gradient(circle at top left, #1e1b4b, #0f172a);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .policy-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--text-dim);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary);
+        }
+
+        h1 { margin-top: 0; font-size: 2rem; color: #f87171; }
+        h2 { color: var(--primary); font-size: 1.5rem; margin-top: 40px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px; }
+        
+        .step-card {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: var(--primary);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .contact-box {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .footer { text-align: center; margin-top: 40px; color: var(--text-dim); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="privacy_policy.html" class="logo">Vitae</a>
+            <nav>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="#" class="active">Account Deletion</a>
+            </nav>
+        </header>
+
+        <div class="policy-card">
+            <h1>Account Deletion & Data Removal</h1>
+            <p>We provide clear and easy ways for you to delete your data and account to comply with our commitment to user privacy.</p>
+
+            <h2>Option 1: In-App Deletion (Recommended)</h2>
+            <p>The fastest way to remove your data is through the Vitae app:</p>
+            
+            <div class="step-card">
+                <span class="step-number">1</span> Open the <strong>Settings</strong> screen.
+            </div>
+            <div class="step-card">
+                <span class="step-number">2</span> Tap the <strong>Delete Account</strong> button.
+            </div>
+            <div class="step-card">
+                <span class="step-number">3</span> Select what you want to delete (Templates, Shared Content, or Account Identity).
+            </div>
+            <div class="step-card">
+                <span class="step-number">4</span> Confirm the deletion. Your data will be wiped instantly from our cloud.
+            </div>
+
+            <h2>Option 2: Manual Request</h2>
+            <p>If you have uninstalled the app or cannot access it, you can request manual deletion via email.</p>
+
+            <div class="contact-box">
+                <strong>Data Deletion Request</strong><br>
+                Email us at: <a href="mailto:asanistudiobangladesh@gmail.com" style="color: #f87171">asanistudiobangladesh@gmail.com</a><br>
+                <small>Subject: Data Deletion Request for [Your UID or Email]</small>
+                <p style="margin-top: 10px; font-size: 0.9rem;">We process all manual deletion requests within <strong>7 business days</strong>. Once deleted, your cloud data and membership cannot be recovered.</p>
+            </div>
+        </div>
+
+        <div class="footer">&copy; 2026 Asani Studio Bangladesh</div>
+    </div>
+</body>
+</html>
