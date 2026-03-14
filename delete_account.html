@@ -7,17 +7,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6366f1;
-            --accent: #ef4444;
-            --bg: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --text-main: #f8fafc;
-            --text-dim: #94a3b8;
+            --primary: #4f46e5;
+            --danger: #dc2626;
+            --bg: #ffffff;
+            --surface: #f9fafb;
+            --card-border: #e5e7eb;
+            --text-main: #111827;
+            --text-dim: #4b5563;
         }
 
         body {
             font-family: 'Outfit', sans-serif;
-            background: radial-gradient(circle at top left, #1e1b4b, #0f172a);
+            background-color: var(--bg);
             color: var(--text-main);
             line-height: 1.7;
             margin: 0;
@@ -28,7 +29,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
 
         header {
@@ -37,27 +38,16 @@
         }
 
         .logo {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #818cf8, #c084fc);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 10px;
+            color: var(--primary);
+            margin-bottom: 5px;
             text-decoration: none;
-            display: inline-block;
-        }
-
-        .policy-card {
-            background: var(--card-bg);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 24px;
-            padding: 40px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            letter-spacing: -0.02em;
         }
 
         nav {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             text-align: center;
         }
 
@@ -66,46 +56,60 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: 600;
-            font-size: 0.9rem;
-            transition: color 0.3s;
+            font-size: 0.95rem;
+            transition: color 0.2s;
         }
 
         nav a:hover, nav a.active {
             color: var(--primary);
         }
 
-        h1 { margin-top: 0; font-size: 2rem; color: #f87171; }
-        h2 { color: var(--primary); font-size: 1.5rem; margin-top: 40px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px; }
+        .policy-card {
+            background: var(--bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 { margin-top: 0; font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; color: var(--danger); }
+        h2 { color: var(--text-main); font-size: 1.4rem; margin-top: 45px; border-bottom: 2px solid var(--surface); padding-bottom: 8px; font-weight: 700; }
         
+        p, li { color: var(--text-dim); }
+
         .step-card {
-            background: rgba(255,255,255,0.05);
+            background: var(--surface);
             padding: 20px;
             border-radius: 12px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 16px;
+            border: 1px solid var(--card-border);
+            display: flex;
+            align-items: center;
         }
 
         .step-number {
-            display: inline-block;
-            width: 30px;
-            height: 30px;
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
             background: var(--primary);
+            color: white;
             border-radius: 50%;
             text-align: center;
-            line-height: 30px;
-            margin-right: 10px;
+            line-height: 32px;
+            margin-right: 15px;
             font-weight: bold;
+            font-size: 0.9rem;
         }
 
         .contact-box {
-            background: rgba(239, 68, 68, 0.1);
-            border-left: 4px solid var(--accent);
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 40px;
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            padding: 24px;
+            border-radius: 12px;
+            margin-top: 50px;
         }
 
-        .footer { text-align: center; margin-top: 40px; color: var(--text-dim); font-size: 0.9rem; }
+        .footer { text-align: center; margin-top: 50px; color: var(--text-dim); font-size: 0.9rem; padding-bottom: 40px; }
     </style>
 </head>
 <body>
@@ -119,33 +123,36 @@
         </header>
 
         <div class="policy-card">
-            <h1>Account Deletion & Data Removal</h1>
-            <p>We provide clear and easy ways for you to delete your data and account to comply with our commitment to user privacy.</p>
+            <h1>Account & Data Removal</h1>
+            <p>We offer transparent and immediate ways to delete your cloud-stored data and account identity.</p>
 
-            <h2>Option 1: In-App Deletion (Recommended)</h2>
-            <p>The fastest way to remove your data is through the Vitae app:</p>
+            <h2>Option 1: In-App Deletion</h2>
+            <p>This is the fastest method. Deletion takes effect immediately:</p>
             
             <div class="step-card">
-                <span class="step-number">1</span> Open the <strong>Settings</strong> screen.
+                <div class="step-number">1</div>
+                <div>Open <strong>Settings</strong> in the Vitae app.</div>
             </div>
             <div class="step-card">
-                <span class="step-number">2</span> Tap the <strong>Delete Account</strong> button.
+                <div class="step-number">2</div>
+                <div>Tap the <strong>Delete Account</strong> button.</div>
             </div>
             <div class="step-card">
-                <span class="step-number">3</span> Select what you want to delete (Templates, Shared Content, or Account Identity).
+                <div class="step-number">3</div>
+                <div>Select the data types you wish to erase.</div>
             </div>
             <div class="step-card">
-                <span class="step-number">4</span> Confirm the deletion. Your data will be wiped instantly from our cloud.
+                <div class="step-number">4</div>
+                <div>Confirm. Your data is wiped from our cloud storage instantly.</div>
             </div>
 
-            <h2>Option 2: Manual Request</h2>
-            <p>If you have uninstalled the app or cannot access it, you can request manual deletion via email.</p>
+            <h2>Option 2: Manual Data Erasure</h2>
+            <p>If you no longer have the app installed, you can request manual removal.</p>
 
             <div class="contact-box">
-                <strong>Data Deletion Request</strong><br>
-                Email us at: <a href="mailto:asanistudiobangladesh@gmail.com" style="color: #f87171">asanistudiobangladesh@gmail.com</a><br>
-                <small>Subject: Data Deletion Request for [Your UID or Email]</small>
-                <p style="margin-top: 10px; font-size: 0.9rem;">We process all manual deletion requests within <strong>7 business days</strong>. Once deleted, your cloud data and membership cannot be recovered.</p>
+                <strong style="color: var(--danger)">Email Request</strong><br>
+                Submit your request to: <a href="mailto:asanistudiobangladesh@gmail.com" style="color: var(--danger); text-decoration: none; font-weight: bold;">asanistudiobangladesh@gmail.com</a><br>
+                <p style="margin-top: 10px; font-size: 0.95rem;">Requests are processed within <strong>7 business days</strong>. Note: Local resume data on your device is only deleted by uninstalling the app.</p>
             </div>
         </div>
 
